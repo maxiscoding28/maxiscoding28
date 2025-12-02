@@ -1,27 +1,164 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Max Winslow</title>
-  <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="icon" type="image/x-icon" href="favico.ico" />
-</head>
-<body>
-  <div class="container">
-    <img src="me.jpeg" alt="Max Winslow Photo" class="profile-photo" />
-    <h1>Max Winslow</h1>
-    <p class="handle">@maxiscoding28</p>
-    <p class="bio">Software Handyman.</p>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Max Winslow — Profile</title>
+		<style>
+			:root {
+				--bg: #ffffff;
+				--text: #111111;
+				--muted: #555555;
+				--accent: #0a66c2; /* linkedin blue tone for links */
+				--border: #e6e6e6;
+				--maxw: 720px;
+			}
+			* { box-sizing: border-box; }
+			html, body { height: 100%; }
+			body {
+				margin: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+				background: var(--bg);
+				color: var(--text);
+				line-height: 1.6;
+			}
+			.wrap {
+				max-width: var(--maxw);
+				margin: 0 auto;
+				padding: 48px 20px;
+			}
+			header { margin-bottom: 28px; }
+			h1 {
+				font-size: 32px;
+				font-weight: 700;
+				letter-spacing: -0.02em;
+				margin: 0 0 8px;
+			}
+			.role {
+				color: var(--muted);
+				font-size: 16px;
+			}
+			.bio {
+				margin: 20px 0 24px;
+				font-size: 16px;
+				color: var(--text);
+			}
+			nav.links {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 12px 18px;
+				margin: 12px 0 32px;
+			}
+			nav.links a {
+				color: var(--accent);
+				text-decoration: none;
+				border-bottom: 1px solid transparent;
+			}
+			nav.links a:focus, nav.links a:hover {
+				border-color: var(--accent);
+			}
+			/* Ensure active tab has styling on initial load */
+			.tab-btn.active {
+				border-bottom: 2px solid var(--accent) !important;
+				color: var(--text) !important;
+			}
+			section { margin: 28px 0; }
+			section h2 {
+				font-size: 18px;
+				font-weight: 600;
+				margin: 0 0 12px;
+			}
+			.projects-list {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 12px;
+			}
+			.card {
+				border: 1px solid var(--border);
+				border-radius: 8px;
+				padding: 14px;
+			}
+			.card h3 { margin: 0 0 6px; font-size: 16px; }
+			.card p { margin: 0; color: var(--muted); font-size: 14px; }
+			footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+			@media (min-width: 700px) {
+				h1 { font-size: 40px; }
+				.bio { font-size: 17px; }
+			}
+		</style>
+	</head>
+	<body>
+		<main class="wrap" aria-label="Profile">
+			<header>
+				<h1>Max Winslow</h1>
+				<div class="role">Current Role: <span id="current-role">Customer Reliability Engineer @ Github</span></div>
+                <p class="bio" id="bio" ></p>
+                I'm a support-oriented engineer.<br>
+                I build software and help enterprise customers keep systems reliable and fast.<br>
+                I combine development with troubleshooting.<br>
+                I work across the stack and focus on clean, maintainable solutions.<br>
+                I handle performance tuning, bug fixes, and incident response<br>
+                I enjoy solving tough problems and shipping quickly.
+                </p>
+				<nav class="links" aria-label="Primary links">
+					<a href="https://www.linkedin.com/in/" aria-label="LinkedIn">LinkedIn</a>
+					<a href="https://github.com/maxiscoding28" aria-label="GitHub">GitHub</a>
+					<a href="file:///Users/max/Downloads/Winslow-Max-Resume.pdf" download aria-label="Download Resume">Download Resume</a>
+                    <a href="https://leetcode.com/" aria-label="LeetCode">LeetCode</a>
+				</nav>
+			</header>
 
-    <nav>
-      <ul>
-        <li><a href="blog.html" id="blogLink" target="_blank"">Blog</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="socials.html">Socials</a></li>
-      </ul>
-    </nav>
-  </div>
-</body>
+            <section aria-label="Content">
+                <div style="border-bottom: 1px solid var(--border); margin-bottom: 16px;"></div>
+                    <button class="tab-btn active" onclick="showTab('posts')" style="padding: 8px 16px; border: none; background: none; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; font-size: 16px;">Posts</button>
+                    <button class="tab-btn" onclick="showTab('projects')" style="padding: 8px 16px; border: none; background: none; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; font-size: 16px;">Projects</button>
+                </div>
+                
+                <div id="posts-tab" class="tab-content">
+                    <div class="projects-list">
+                        <a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
+                            <h3>Post Title</h3>
+                            <p>Short description of the post topic.</p>
+                        </a>
+                        <a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
+                            <h3>Post Title</h3>
+                            <p>Short description of the post topic.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="projects-tab" class="tab-content" style="display: none;">
+                    <div class="projects-list">
+                        <div class="card">
+                            <h3>Project Title</h3>
+                            <p>Short one-line description of what it does or impact.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Project Title</h3>
+                            <p>Short one-line description of what it does or impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                function showTab(tab) {
+                    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+                    document.querySelectorAll('.tab-btn').forEach(el => {
+                        el.classList.remove('active');
+                        el.style.borderColor = 'transparent';
+                        el.style.color = 'var(--muted)';
+                    });
+                    document.getElementById(tab + '-tab').style.display = 'block';
+                    event.target.classList.add('active');
+                    event.target.style.borderColor = 'var(--accent)';
+                    event.target.style.color = 'var(--text)';
+                }
+            </script>
+
+			<footer>
+				<span>© Max Winslow</span>
+			</footer>
+		</main>
+	</body>
 </html>
