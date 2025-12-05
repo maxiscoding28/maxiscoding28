@@ -6,7 +6,7 @@ I ship reliable, maintainable code and enjoy solving tough problems quickly and 
 
 ## Skills
 
-- **Linux Administration**
+- **Linux Administration** Networking, Performance, Disaster recovery
 - **Containers & Orchestration:** Docker, Kubernetes
 - **Programming:** Golang, Python
 - **GitHub Platform:** GitHub Enterprise Admin, GitHub Enterprise Server, GitHub Actions
