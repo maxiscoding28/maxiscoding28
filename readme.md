@@ -1,6 +1,5 @@
 # Max Winslow  
 **Handle:** maxiscoding28  
-**LinkedIn:** https://www.linkedin.com/in/max-winslow/
 
 I'm an engineer who works directly with customers to diagnose and resolve complex issues.  
 I manage critical escalations, lead war-room calls, and help de-escalate customer friction.  
