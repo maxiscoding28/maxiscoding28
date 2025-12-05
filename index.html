@@ -57,11 +57,6 @@
 			nav.links a:focus, nav.links a:hover {
 				border-color: var(--accent);
 			}
-			/* Ensure active tab has styling on initial load */
-			.tab-btn.active {
-				border-bottom: 2px solid var(--accent) !important;
-				color: var(--text) !important;
-			}
 			section { margin: 28px 0; }
 			section h2 {
 				font-size: 18px;
@@ -92,80 +87,38 @@
 			<header>
 				<h1>Max Winslow</h1>
 				<div class="role">Current Role: <span id="current-role">Customer Reliability Engineer @ Github</span></div>
-                <p class="bio" id="bio" ></p>
+				<p class="bio" id="bio" ></p>
 					I'm an engineer who works directly with customers to diagnose and resolve complex issues.<br>
 					I manage critical escalations, lead war-room calls, and help de-escalate customer friction.<br>
 					I ship reliable, maintainable code and enjoy solving tough problems quickly and pragmatically.
 					</p>
 
-					<section aria-label="Skills">
-						<h2>Skills</h2>
-						<ul style="margin: 0; padding-left: 20px; color: var(--text); font-size: 15px; line-height: 1.8;">
-							<li><strong>Linux Administration</strong> Networking, Performance, Disaster Recovery</li>
-							<li><strong>Containers & Orchestration:</strong> Docker, Kubernetes, Nomad</li>
-							<li><strong>Programming:</strong> Golang, Python</li>
-							<li><strong>GitHub Platform:</strong> GitHub Enterprise Admin, GitHub Enterprise Server, GitHub Actions</li>
-							<li><strong>HashiStack:</strong> Terraform, Vault, Consul, Nomad, Boundary</li>
-						</ul>
-					</section>
-
 					<p class="bio" id="bio"
-                </p>
+				</p>
 				<nav class="links" aria-label="Primary links">
 					<a href="https://www.linkedin.com/in/" aria-label="LinkedIn">LinkedIn</a>
 					<a href="https://github.com/maxiscoding28" aria-label="GitHub">GitHub</a>
 					<a href="file:///Users/max/Downloads/Winslow-Max-Resume.pdf" download aria-label="Resume">Resume</a>
-                    <a href="https://leetcode.com/" aria-label="LeetCode">LeetCode</a>
+					<a href="https://leetcode.com/" aria-label="LeetCode">LeetCode</a>
 				</nav>
 			</header>
 
-            <section aria-label="Content">
-                <div style="border-bottom: 1px solid var(--border); margin-bottom: 16px;"></div>
-                    <button class="tab-btn active" onclick="showTab('posts')" style="padding: 8px 16px; border: none; background: none; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; font-size: 16px;">Posts</button>
-                    <button class="tab-btn" onclick="showTab('projects')" style="padding: 8px 16px; border: none; background: none; color: var(--muted); cursor: pointer; border-bottom: 2px solid transparent; font-size: 16px;">Projects</button>
-                </div>
-                
-                <div id="posts-tab" class="tab-content">
-                    <div class="projects-list">
-                        <a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
-                            <h3>Post Title</h3>
-                            <p>Short description of the post topic.</p>
-                        </a>
-                        <a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
-                            <h3>Post Title</h3>
-                            <p>Short description of the post topic.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="projects-tab" class="tab-content" style="display: none;">
-                    <div class="projects-list">
-                        <div class="card">
-                            <h3>Project Title</h3>
-                            <p>Short one-line description of what it does or impact.</p>
-                        </div>
-                        <div class="card">
-                            <h3>Project Title</h3>
-                            <p>Short one-line description of what it does or impact.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <script>
-                function showTab(tab) {
-                    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-                    document.querySelectorAll('.tab-btn').forEach(el => {
-                        el.classList.remove('active');
-                        el.style.borderColor = 'transparent';
-                        el.style.color = 'var(--muted)';
-                    });
-                    document.getElementById(tab + '-tab').style.display = 'block';
-                    event.target.classList.add('active');
-                    event.target.style.borderColor = 'var(--accent)';
-                    event.target.style.color = 'var(--text)';
-                }
-            </script>
+			<section aria-label="Posts">
+				<div style="border-bottom: 1px solid var(--border); margin-bottom: 16px;">
+					<h2 style="padding: 8px 0; margin: 0 0 12px; font-size: 16px;">Posts</h2>
+				</div>
+				
+				<div class="projects-list">
+					<a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
+						<h3>Post Title</h3>
+						<p>Short description of the post topic.</p>
+					</a>
+					<a href="#" class="card" style="text-decoration: none; color: inherit; display: block;">
+						<h3>Post Title</h3>
+						<p>Short description of the post topic.</p>
+					</a>
+				</div>
+			</section>
 
 			<footer>
 				<span>© Max Winslow</span>
