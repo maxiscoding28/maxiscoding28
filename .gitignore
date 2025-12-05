@@ -1,14 +1,1 @@
-# Hugo build output
-/public/
-/resources/
-
-# OS / Editor
-.DS_Store
-.idea/
-.vscode/
-
-# Hugo cache
-.hugo_build.lock
-
-# Node (if you later add tooling)
-node_modules/
+notes.txt
