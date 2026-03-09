@@ -8,4 +8,4 @@ title: Max Winslow
 - [GitHub](https://github.com/maxiscoding28)
 - [LinkedIn](https://linkedin.com/in/maxwinslow)
 
-[Blog](/blog/)
+[Blog]({{ "/blog/" | relative_url }})
