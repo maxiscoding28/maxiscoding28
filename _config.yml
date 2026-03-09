@@ -1,0 +1,11 @@
+title: Max Winslow
+description: Personal blog of Max Winslow
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+sass:
+  sass_dir: _sass
+  style: compressed

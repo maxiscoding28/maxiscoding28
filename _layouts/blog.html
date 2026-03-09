@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<h1>Blog</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+    &mdash;
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/' | relative_url }}">&larr; Home</a></p>
