@@ -1,7 +1,7 @@
 title: Max Winslow
 description: Personal blog of Max Winslow
 url: ""
-baseurl: ""
+baseurl: "/maxiscoding28"
 
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title/
