@@ -15,4 +15,4 @@ In this scenario, I realize I am not actually looking to read. What I really wan
 
 The goal of this blog series is to document my progress and hold myself accountable for completing the large volume of books I have purchased but not yet read. My goal is to provide a 500-word minimum blog post on each book after I complete it. Upon completion, I must also decide whether it is a book I want to keep or donate.
 
-First up, [The 5 Types of Wealth by Sahil Bloom](https://www.goodreads.com/book/show/212806718-the-5-types-of-wealth)
+First up, [The 5 Types of Wealth by Sahil Bloom](https://www.goodreads.com/book/show/212806718-the-5-types-of-wealth){:target="_blank"}
