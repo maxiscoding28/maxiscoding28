@@ -8,7 +8,7 @@ tags: [reading, tsundoku]
 When learning different languages, I sometimes come across a word that has no direct translation into English. There are many resources online dedicated to this concept; one of my particular favorites is tsundoku. I will let Wikipedia provide the definition more succinctly than I could ever hope to:
 
 
-> Tsundoku (積ん読) is the phenomenon of acquiring reading materials but letting them pile up in a home without reading them.[1][2][3][4] The term is also used to refer to unread books on a bookshelf meant for reading later.
+> Tsundoku (積ん読) is the phenomenon of acquiring reading materials but letting them pile up in a home without reading them. The term is also used to refer to unread books on a bookshelf meant for reading later.
 
 
 What a perfect term for my affliction. I find inspiration when I see a book online with a description that vaguely meets my criteria. I open the Amazon app and send a few dollars Jeff Bezos's way. If I am feeling impulsive, I will get the Kindle version so I can have it immediately. If I want the tactile sensation of holding the book, I will wait a few days to receive the physical copy. Predictably, the book comes into my possession and I might read a couple of chapters, but then, inevitably, the book is set aside, the initial inspiration passes, and it is added to my ever-encroaching book graveyard.
