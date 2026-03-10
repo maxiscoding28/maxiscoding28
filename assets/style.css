@@ -40,6 +40,10 @@ article {
   margin-top: 1rem;
 }
 
+article p {
+  margin-bottom: 1rem;
+}
+
 .post-list span {
   font-size: 0.85em;
   color: #555;
